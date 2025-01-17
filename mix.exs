@@ -23,7 +23,8 @@ defmodule CryptoTracker.MixProject do
   defp deps do
     [
       {:websockex, "~> 0.4.3"},
-      {:jason, "~> 1.4"}
+      {:jason, "~> 1.4"},
+      {:tesla, "~> 1.13"}
     ]
   end
 end
