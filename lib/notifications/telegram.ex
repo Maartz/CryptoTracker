@@ -94,8 +94,6 @@ defmodule CryptoTracker.Notifications.Telegram do
       "parse_mode" => "HTML"
     }
 
-    Logger.debug("Sending Telegram message: #{inspect(body, pretty: true)}")
-
     case post("/sendMessage", body) do
       {:ok, %Tesla.Env{status: 200, body: %{"ok" => true}}} ->
         Logger.info("Successfully sent message to Telegram")
@@ -133,4 +131,3 @@ defmodule CryptoTracker.Notifications.Telegram do
     |> DateTime.to_string()
   end
 end
-

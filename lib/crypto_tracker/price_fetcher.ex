@@ -95,7 +95,6 @@ defmodule CryptoTracker.PriceFetcher do
           timestamp = System.system_time(:second)
           CryptoTracker.TimeSeriesStore.insert_price(timestamp, price_data)
 
-          Logger.debug("Saved price data: #{inspect(price_data)}")
           {:ok, %{state | last_save: current_time}}
         else
           {:ok, state}
@@ -114,4 +113,3 @@ defmodule CryptoTracker.PriceFetcher do
 
   defp parse_float(_), do: 0.0
 end
-
