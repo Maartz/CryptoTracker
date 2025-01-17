@@ -8,7 +8,10 @@ defmodule CryptoTracker.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      {CryptoTracker.PriceFetcher, []}
+      {CryptoTracker.PriceFetcher, []},
+      {CryptoTracker.TimeSeriesStore, []},
+      {CryptoTracker.MovingAverage, []},
+      {CryptoTracker.PriceAnalyzer, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
