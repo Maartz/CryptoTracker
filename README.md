@@ -61,7 +61,7 @@ Several key design decisions shape the application's architecture:
 
 ## Key Features
 
-Our system provides comprehensive Bitcoin price monitoring through:
+The system provides comprehensive Bitcoin price monitoring through:
 
 A dual notification system delivers both real-time alerts and regular market updates:
 
@@ -91,7 +91,7 @@ The application demonstrates several interesting technical decisions:
 
 My application relies on several key libraries, each chosen for specific reasons:
 
- - WebSockex (~> 0.4.3): After initially trying websocket_client, I switched to WebSockex for its better stability and more Elixir-native approach to WebSocket connections. It provides better error handling and a more intuitive API for our Binance integration.
+ - WebSockex (~> 0.4.3): After initially trying websocket_client, I switched to WebSockex for its better stability and more Elixir-native approach to WebSocket connections. It provides better error handling and a more intuitive API for the Binance integration.
 
 - Tesla (~> 1.8): Handles the HTTP interactions with Telegram's API. I chose Tesla for its middleware system that makes it easy to handle JSON encoding/decoding and add features like retry logic.
 
@@ -181,7 +181,7 @@ User Behavior:
 
 If you want to see this system in action? 
 
-You can interact with our Bitcoin price monitoring bot directly through Telegram:
+You can interact with the Bitcoin price monitoring bot directly through Telegram:
 [@MaartzAlertBot](https://t.me/MaartzAlertBot) is live and monitoring BTC/USDT prices 24/7. 
 
 Simply start a chat with the bot to begin receiving messages
