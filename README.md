@@ -2,6 +2,12 @@
 
 A real-time Bitcoin price monitoring system built with Elixir, leveraging Binance's WebSocket API to track BTC/USDT price movements and deliver alerts via Telegram. The system features both continuous price analysis and regular market digests.
 
+Related projects by topic:
+
+[Usage of OTP to build a Cart system with LiveView](https://github.com/Maartz/kantox_live)
+
+[Crypto tracker with 2 exchanges and LiveView (out of date)](https://github.com/Maartz/allcoins)
+
 ## Architecture
 
 ```mermaid
