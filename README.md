@@ -89,7 +89,7 @@ The application demonstrates several interesting technical decisions:
 
 ## Libraries and Dependencies
 
-My application relies on several key libraries, each chosen for specific reasons:
+The application relies on several key libraries, each chosen for specific reasons:
 
  - WebSockex (~> 0.4.3): After initially trying websocket_client, I switched to WebSockex for its better stability and more Elixir-native approach to WebSocket connections. It provides better error handling and a more intuitive API for the Binance integration.
 
